@@ -7,11 +7,10 @@ interface PlanConfig {
 
 // Each app's Stripe Price IDs — fill in after creating Products in Stripe Dashboard
 export const APP_PLANS: Record<string, PlanConfig> = {
-  // Example:
-  // "myapp": {
-  //   pro: "price_1Qxxxxx",
-  //   enterprise: "price_1Qyyyyy",
-  // },
+  app1: {
+    pro: "price_1TF7fi2HrOBibjT9dho1wfwZ",
+    enterprise: "price_1TF7jV2HrOBibjT9qrKwWcws",
+  },
 };
 
 export function getPriceId(appId: string, plan: PlanName): string | null {
